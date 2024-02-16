@@ -11,27 +11,41 @@
       sizes="60x60"
       href="./assets/images/Shahbaaz Athhar.ico"
     />
+    <link rel="stylesheet" href="style.css" />
 
     <title>Newsletter sign-up form with success message</title>
   </head>
   <body>
-    <main>
+    <main id="main-container">
       <!-- Sign-up form start -->
-
-      Stay updated! Join 60,000+ product managers receiving monthly updates on:
-      Product discovery and building what matters Measuring to ensure updates
-      are a success And much more! Email address email@company.com Subscribe to
-      monthly newsletter
-
-      <!-- Sign-up form end -->
-
-      <!-- Success message start -->
-
-      Thanks for subscribing! A confirmation email has been sent to
-      ash@loremcompany.com. Please open it and click the button inside to
-      confirm your subscription. Dismiss message
-
-      <!-- Success message end -->
+      <section class="main-content" >
+        <article>
+          <h1>Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:
+            <ul>
+              <li><img src="./assets/images/icon-list.svg" alt="point 1">Product
+          discovery and building what matters </li>
+              <li><img src="./assets/images/icon-list.svg" alt="point 2"> Measuring to ensure updates are a
+          success</li>
+              <li><img src="./assets/images/icon-list.svg" alt="point 3">And much more!</li>
+            </ul>
+          </p>
+        </article>
+        <form action="">
+          <label for="email-address">Email address
+          </label>
+           <input type="email" placeholder="email@company.com" id="email-address" required>
+         <input type="button" value="Subscribe to monthly newsletter" id="email-button" class="button">
+        </form>
+      </section>
+      <section>
+        <img
+          src="./assets/images/illustration-sign-up-desktop.svg"
+          alt="project image screen and documents"
+          class="main-img"
+        />
+      </section>
     </main>
+    <script type="module" src="script.js"></script>
   </body>
 </html>

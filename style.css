@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #36384d;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+main {
+  background-color: #fff;
+  max-width: 930px;
+  max-height: 641px;
+  height: 90vh;
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+}
+.main-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 0 auto;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+li {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+h1 {
+  font-size: 56px;
+  font-weight: bold;
+}
+p {
+  font-size: 16px;
+  line-height: 150%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+label {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 150%;
+}
+input[type="email"] {
+  width: 376px;
+  margin-top: 10px;
+  padding: 15px 10px;
+  border-radius: 10px;
+  border: 2px solid rgba(25, 24, 43, 0.25);
+}
+input[type="email"]:focus {
+  border: 1px solid #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.button,
+button {
+  cursor: pointer;
+  width: 396px;
+  padding: 20px 10px;
+  border-radius: 10px;
+  background-color: #242742;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+}
+.button:focus,
+.button:hover,
+button:focus,
+button:hover {
+  background: linear-gradient(#ff6a3a, #ff527b);
+}
+.main-img {
+  height: 100%;
+}
+
+.width {
+  width: 504px;
+  height: 520px;
+}
+.success-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+  /* align-items: center; */
+  /* gap: 10px; */
+}
+.success {
+  width: 64px;
+  height: 64px;
+}

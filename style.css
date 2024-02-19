@@ -15,6 +15,7 @@ body {
 }
 main {
   background-color: #fff;
+  width: 80%;
   max-width: 930px;
   max-height: 641px;
   height: 90vh;
@@ -100,7 +101,11 @@ button:hover {
   background: linear-gradient(#ff6a3a, #ff527b);
 }
 .main-img {
+  width: 45%;
   height: 100%;
+  background-image: url(./assets/images/illustration-sign-up-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .width {
@@ -119,9 +124,9 @@ button:hover {
   width: 64px;
   height: 64px;
 }
-.orange {
+.orange[type="email"] {
   background-color: rgba(255, 97, 85, 0.15);
-  border: 1px solid #ff6155;
+  border: 2px solid #ff6155;
 }
 .error {
   font-size: 12px;
@@ -129,4 +134,31 @@ button:hover {
   line-height: 150%;
   color: #ff6155;
   display: none;
+}
+@media screen and (max-width: 768px) {
+  body {
+    height: auto;
+  }
+  main {
+    margin-top: 20px;
+    width: 90%;
+    height: auto;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .main-content {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .main-img {
+    width: 100%;
+    height: 500px;
+    background-image: url(./assets/images/illustration-sign-up-mobile.svg);
+    background-size: cover;
+  }
+  .success-content {
+    justify-content: flex-start;
+  }
 }

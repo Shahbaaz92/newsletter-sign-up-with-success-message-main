@@ -11,15 +11,10 @@ const emailAddress = document.getElementById("email-address");
 const mainCon = document.getElementById("main-container");
 const error = document.getElementById("error");
 
-const validateEmail = (email) => {
-  return String(email)
-    .toLowerCase()
-    .match(
-      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-    );
-};
 emailBtn.addEventListener("click", () => {
-  if (emailAddress.value === validateEmail(emailAddress.value)) {
+  if (
+    emailAddress.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)
+  ) {
     mainCon.classList.add("width");
     mainCon.innerHTML = `
   <section class="success-content">

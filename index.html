@@ -31,11 +31,11 @@
             </ul>
           </p>
         </article>
-        <form action="">
-          <label for="email-address">Email address
+        <form >
+          <label for="email-address">Email address<span class="error" id="error">Valid Email Required</span>
           </label>
-           <input type="email" placeholder="email@company.com" id="email-address" required>
-         <input type="button" value="Subscribe to monthly newsletter" id="email-button" class="button">
+           <input type="email" placeholder="email@company.com" id="email-address" pattern=".+@example\.com" required>
+           <input type="button" value="Subscribe to monthly newsletter" id="email-button" class="button" >
         </form>
       </section>
       <section>

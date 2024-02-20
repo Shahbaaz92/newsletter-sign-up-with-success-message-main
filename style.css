@@ -137,19 +137,26 @@ button:hover {
 }
 @media screen and (max-width: 768px) {
   body {
-    height: auto;
+    height: 100%;
+  }
+  h1 {
+    font-size: 40px;
   }
   main {
     margin-top: 20px;
     width: 90%;
-    height: auto;
+    height: 100%;
     flex-direction: column-reverse;
     gap: 20px;
+    padding: 0;
+    padding-bottom: 50px;
+    border-radius: 0;
   }
   .main-content {
-    width: 100%;
+    width: 90%;
     height: auto;
     padding: 0;
+    gap: 30px;
   }
 
   .main-img {
@@ -157,6 +164,7 @@ button:hover {
     height: 500px;
     background-image: url(./assets/images/illustration-sign-up-mobile.svg);
     background-size: cover;
+    border-radius: 0 0 10px 10px;
   }
   .success-content {
     justify-content: flex-start;
